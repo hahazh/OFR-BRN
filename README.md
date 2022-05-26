@@ -49,9 +49,18 @@ cd src
 
 python eval.py
 ```
-or you may directly get all results in:
+# Run a demo
 
- src/evaluation_results
+
+
+
+
+```
+cd src
+
+python demo.py
+```
+
 # Acknowledgment
 Our code is built on
 
