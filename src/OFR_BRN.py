@@ -125,10 +125,9 @@ class Flow_STSR(nn.Module):
         for i in range(0, t):
             lr_curr = lrs[:, i, :, :, :]
             if i > 0:  
-                if flows_forward is not None:
-                    flow = flows_forward[:, i - 1, :, :, :]
-                else:
-                    flow = flows_backward[:, -i, :, :, :]
+               
+                flow = flows_forward[:, i - 1, :, :, :]
+               
                 previous_insert_HSF = HSF.clone()
 
                 HSF = flow_warp(HSF, flow.permute(0, 2, 3, 1))
