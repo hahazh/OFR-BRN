@@ -3,11 +3,11 @@
 This is the implementation of  paper "Optical-Flow-Reuse-Based Bidirectional Recurrence
 Network for Space-Time Video Super-Resolution".
 
-<!-- # Pre-trained models -->
+# Pre-trained models
 
-<!-- [BaiduCloud](https://pan.baidu.com/s/1GjE-HsQwKIwEZl0V5doZOQ) -->
+[BaiduCloud](https://pan.baidu.com/s/1GjE-HsQwKIwEZl0V5doZOQ)
 
-<!-- password: 0wm8 -->
+password: 0wm8 
 
 # Environment
 We are good in the environment:
