@@ -61,7 +61,7 @@ def main():
 
 if __name__ == "__main__":
     parser = ArgumentParser(description="validation script for vid4",formatter_class=ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--datapath', default='/home/zhangyuantong/dataset/Vid4/GT/', type=str, help='dataset path')
+    parser.add_argument('--datapath', default='xxx', type=str, help='dataset path')
     parser.add_argument('--outputpath', default='../output/vid4', type=str, help='outputpath of test sequence')
     parser.add_argument('--weight', default='../pretrained_weight/ofr-brn.pth', type=str, help='weight of model')
 

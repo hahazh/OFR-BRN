@@ -61,8 +61,8 @@ def cal_REDS():
 def cal_vid4():
 
     seq_name_tuple = ('calendar','city','foliage','walk')
-    GT_base_dir =  '/home/zhangyuantong/dataset/Vid4/GT/'
-    pred_base_dir = '/home/zhangyuantong/code/MyOpenSource/ofr-brn_src/output/vid4'
+    GT_base_dir =  'xxx'
+    pred_base_dir = 'xxx'
     total_psnr = 0
     total_ssim = 0
     cnt = 0
@@ -110,12 +110,13 @@ def cal_vimeo():
 
     GT_base_dir =  'xxx'
     pred_base_dir = 'xxx'
+    seq_dir = 'xxx'
     total_psnr = 0
     read_all = True
     if read_all:
-        test_list_1 = open('fast_testset.txt').readlines()
-        test_list_2 = open('medium_testset.txt').readlines()
-        test_list_3 = open('slow_testset.txt').readlines()
+        test_list_1 = open(seq_dir+'/'+'fast_testset.txt').readlines()
+        test_list_2 = open(seq_dir+'/'+'medium_testset.txt').readlines()
+        test_list_3 = open(seq_dir+'/'+'slow_testset.txt').readlines()
         test_list = test_list_1+test_list_2+test_list_3
     img_pred_dir_ls = sorted([os.path.join(pred_base_dir,each.strip()) for each in test_list])
     total_psnr = 0
@@ -167,7 +168,7 @@ def cal_vimeo():
 
 if __name__=='__main__':
     # specify imageset you want to test
-    cal_vid4()
+    # cal_vid4()
     # cal_REDS()
     
-    # cal_vimeo()
+    cal_vimeo()
