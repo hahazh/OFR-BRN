@@ -61,8 +61,8 @@ def cal_REDS():
 def cal_vid4():
 
     seq_name_tuple = ('calendar','city','foliage','walk')
-    GT_base_dir =  'xxx'
-    pred_base_dir = 'xxx'
+    GT_base_dir =  '/home/zhangyuantong/dataset/Vid4/GT/'
+    pred_base_dir = '/home/zhangyuantong/code/MyOpenSource/STSR-OFR/output/vid4'
     total_psnr = 0
     total_ssim = 0
     cnt = 0
@@ -168,7 +168,7 @@ def cal_vimeo():
 
 if __name__=='__main__':
     # specify imageset you want to test
-    # cal_vid4()
+    cal_vid4()
     # cal_REDS()
     
-    cal_vimeo()
+    # cal_vimeo()
