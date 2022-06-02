@@ -61,8 +61,8 @@ def cal_REDS():
 def cal_vid4():
 
     seq_name_tuple = ('calendar','city','foliage','walk')
-    GT_base_dir =  '/home/zhangyuantong/dataset/Vid4/GT/'
-    pred_base_dir = '/home/zhangyuantong/code/MyOpenSource/STSR-OFR/output/vid4'
+    GT_base_dir =  ''
+    pred_base_dir = ''
     total_psnr = 0
     total_ssim = 0
     cnt = 0
