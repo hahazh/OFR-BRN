@@ -21,7 +21,7 @@ def cal_REDS():
         print(each)
         psnr_avg_seq = 0
         ssim_avg_seq = 0
-        for i in range(1,98):
+        for i in range(0,99):
             print(each+'/'+str(i).zfill(8)+'.png')
             img_p = os.path.join(out_base,each,str(i).zfill(8)+'.png')
            
@@ -54,10 +54,10 @@ def cal_REDS():
             ssim_avg_total+=ssim
 
             print('psnr  '+str(psnr)+ ' ssim   ' +str(ssim))
-        print(each+' psnr '+str(psnr_avg_seq/97))
-        print(each+' ssim '+str(ssim_avg_seq/97))
-    print('total psnr '+str(psnr_avg_total/(97*len(out_img_p1_dir))))
-    print('total ssim '+str(ssim_avg_total/(97*len(out_img_p1_dir))))
+        print(each+' psnr '+str(psnr_avg_seq/99))
+        print(each+' ssim '+str(ssim_avg_seq/99))
+    print('total psnr '+str(psnr_avg_total/(99*len(out_img_p1_dir))))
+    print('total ssim '+str(ssim_avg_total/(99*len(out_img_p1_dir))))
 def cal_vid4():
 
     seq_name_tuple = ('calendar','city','foliage','walk')
