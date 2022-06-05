@@ -49,6 +49,7 @@ cd src
 
 python eval.py
 ```
+or you may directly get all evaluation results in src/evaluation_results
 # Run a demo
 
 
