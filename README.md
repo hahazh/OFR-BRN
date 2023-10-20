@@ -64,6 +64,12 @@ cd src
 python demo.py
 ```
 
+# Other STVSR works
+We have conducted a series of video spatiotemporal super-resolution-related works, which include not only OFR-BRN but also:
+
+Yuantong Zhang, Huairui Wang, Zhenzhong Chen: Controllable Space-Time Video Super-Resolution via Enhanced Bidirectional Flow Warping. VCIP 2022
+Yuantong Zhang, Daiqin Yang, Zhenzhong Chen, Wenpeng Ding: Continuous Space-Time Video Super-Resolution Utilizing Long-Range Temporal Information. CoRR abs/2302.13256 (2023)
+
 # Acknowledgment
 Our code is built on
 
